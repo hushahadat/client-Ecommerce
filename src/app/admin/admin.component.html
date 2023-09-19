@@ -1,0 +1,373 @@
+<div class="container-fluid" id="contents">
+  <br />
+  <h3>Admin Dashboard</h3>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="product-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#product"
+        type="button"
+        role="tab"
+        aria-controls="product"
+        aria-selected="true"
+      >
+        Product
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="suppliers-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#suppliers"
+        type="button"
+        role="tab"
+        aria-controls="suppliers"
+        aria-selected="false"
+      >
+        Suppliers
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="manufacturers-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#manufacturers"
+        type="button"
+        role="tab"
+        aria-controls="manufacturers"
+        aria-selected="false"
+      >
+        Manufacturers
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="user-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#user"
+        type="button"
+        role="tab"
+        aria-controls="user"
+        aria-selected="false"
+      >
+        User
+      </button>
+    </li>
+  </ul>
+  <hr />
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="product"
+      role="tabpanel"
+      aria-labelledby="product-tab"
+    >
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="addProduct-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#addProduct"
+            type="button"
+            role="tab"
+            aria-controls="addProduct"
+            aria-selected="true"
+          >
+            Add Product
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="updateProduct-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#updateProduct"
+            type="button"
+            role="tab"
+            aria-controls="updateProduct"
+            aria-selected="false"
+          >
+            Update Product
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="deleteProduct-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#deleteProduct"
+            type="button"
+            role="tab"
+            aria-controls="deleteProduct"
+            aria-selected="false"
+          >
+            View Product
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="addProduct"
+          role="tabpanel"
+          aria-labelledby="addProduct-tab"
+        >
+          <app-addproduct></app-addproduct>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="updateProduct"
+          role="tabpanel"
+          aria-labelledby="updateProduct-tab"
+        >
+          <app-updateproduct></app-updateproduct>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="deleteProduct"
+          role="tabpanel"
+          aria-labelledby="deleteProduct-tab"
+        >
+          <app-viewprod></app-viewprod>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="suppliers"
+      role="tabpanel"
+      aria-labelledby="suppliers-tab"
+    >
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="addSupplier-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#addSupplier"
+            type="button"
+            role="tab"
+            aria-controls="addSupplier"
+            aria-selected="true"
+          >
+            Add Supplier
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="updateSupplier-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#updateSupplier"
+            type="button"
+            role="tab"
+            aria-controls="updateSupplier"
+            aria-selected="false"
+          >
+            Update Supplier
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="deleteSupplier-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#deleteSupplier"
+            type="button"
+            role="tab"
+            aria-controls="deleteSupplier"
+            aria-selected="false"
+          >
+            View Supplier
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="addSupplier"
+          role="tabpanel"
+          aria-labelledby="addSupplier-tab"
+        >
+          <app-addsupplier></app-addsupplier>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="updateSupplier"
+          role="tabpanel"
+          aria-labelledby="updateSupplier-tab"
+        >
+          <app-updatesupplier></app-updatesupplier>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="deleteSupplier"
+          role="tabpanel"
+          aria-labelledby="deleteSupplier-tab"
+        >
+          <app-viewsupplier></app-viewsupplier>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="manufacturers"
+      role="tabpanel"
+      aria-labelledby="manufacturers-tab"
+    >
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="addmanufacturers-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#addmanufacturers"
+            type="button"
+            role="tab"
+            aria-controls="addmanufacturers"
+            aria-selected="true"
+          >
+            Add Manufacturer
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="updatemanufacturers-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#updatemanufacturers"
+            type="button"
+            role="tab"
+            aria-controls="updatemanufacturers"
+            aria-selected="false"
+          >
+            Update Manufacturer
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="deletemanufacturers-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#deletemanufacturers"
+            type="button"
+            role="tab"
+            aria-controls="deletemanufacturers"
+            aria-selected="false"
+          >
+            View Manufacturer
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="addmanufacturers"
+          role="tabpanel"
+          aria-labelledby="addmanufacturers-tab"
+        >
+          <app-addmanufacturer></app-addmanufacturer>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="updatemanufacturers"
+          role="tabpanel"
+          aria-labelledby="updatemanufacturers-tab"
+        >
+          <app-updatemanufacturer></app-updatemanufacturer>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="deletemanufacturers"
+          role="tabpanel"
+          aria-labelledby="deletemanufacturers-tab"
+        >
+          <app-view-manufacturer></app-view-manufacturer>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="user"
+      role="tabpanel"
+      aria-labelledby="user-tab"
+    >
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="addUser-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#addUser"
+            type="button"
+            role="tab"
+            aria-controls="addUser"
+            aria-selected="true"
+          >
+            Add User
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="updateUser-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#updateUser"
+            type="button"
+            role="tab"
+            aria-controls="updateUser"
+            aria-selected="false"
+          >
+            Update User
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="deleteUser-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#deleteUser"
+            type="button"
+            role="tab"
+            aria-controls="deleteUser"
+            aria-selected="false"
+          >
+            View User
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="addUser"
+          role="tabpanel"
+          aria-labelledby="addUser-tab"
+        >
+          <app-add-user></app-add-user>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="updateUser"
+          role="tabpanel"
+          aria-labelledby="updateUser-tab"
+        >
+          <app-update-user></app-update-user>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="deleteUser"
+          role="tabpanel"
+          aria-labelledby="deleteUser-tab"
+        >
+          <app-user></app-user>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

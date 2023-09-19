@@ -1,0 +1,49 @@
+<!-- <div id="wimdiv" *ngif="myfuc()">
+hey u there
+</div> -->
+
+<div class="container-fluid">
+  <ng-container *ngIf="products.length != 0">
+    <div class="container-fluid">
+      <div class="row">
+        <ng-container *ngFor="let p of products">
+          <div class="card col-md-3">
+            <img src="{{ p.img_path }}" />
+            <p>{{ p.pName }}</p>
+            <p>{{ p.price }}</p>
+            <p>count: {{ p.count }}</p>
+            <button class="btn btn-delete" (click)="deleteCartbyOne(p._id)">
+              Delete
+            </button>
+            <script>
+              console.log(p._id);
+            </script>
+          </div>
+        </ng-container>
+
+        <h4>Total amount: {{ total }}</h4>
+
+        <button class="btn btn-secondary" id="checkout" (click)="deleteCart()">
+          checkout
+        </button>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="products.length == 0">
+    <div class="container-fluid">
+      <div id="emptycard" class="card">
+        <h4 class="card-title">My Wishlist</h4>
+        <br>
+        <div class="center">
+          <!-- <img src="assets/images/cartempty.png" alt="" /> -->
+          <h5>Your Wishlist is empty!</h5>
+          <h6>Add item to it now</h6>
+          <button class="btn btn-primary" [routerLink]="['/products']">
+            Shop Now
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </ng-container>
+</div>

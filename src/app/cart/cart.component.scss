@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+.container-fluid {
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+  background-color: #e6e6fa;
+  color: #123c69;
+}
+.card{
+  margin-top: 10px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 10px;
+  background-color: #14a098;
+  background-image: linear-gradient(to right, #14a098 , #cccccc);
+  padding: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale();
+}
+#emptycard {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+
+}
+ .center {
+text-align: center;
+  
+ }
+// .center img {
+
+// }
+button{
+  background-color: aquamarine
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+.container-fluid {
+  font-family: "Source Serif Pro", serif;
+  //background-color: #e6e6fa;
+}
+
+#about-section {
+  //background-color: #edc7b7;
+  font-size: large;
+}
+#im {
+  max-width: 370px;
+  max-height: 400px;
+}
+h3 {
+  text-align: center;
+  color: #123c69;
+}
+#header {
+  color: #123c69;
+  padding-top: 30px;
+}
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6 {
+  color: #123c69;
+}
+/* .accordion-header button {
+  background-color: #eee2dc;
+} */
+strong {
+  color: #123c69;
+}
+/* #panelsStayOpen-collapse6,
+#panelsStayOpen-collapse5,
+#panelsStayOpen-collapse4,
+#panelsStayOpen-collapse3,
+#panelsStayOpen-collapse2,
+#panelsStayOpen-collapse1 {
+  background-color: #eee2dc;
+} */
+// body {
+//     font-family: Arial, Helvetica, sans-serif;
+//     margin: 0;
+//   }
+
+//   html {
+//     box-sizing: border-box;
+//   }
+
+//   *, *:before, *:after {
+//     box-sizing: inherit;
+//   }
+//   #cc1{
+//       width: 400px;
+//   }
+//   #cc2{
+//       left: 400px;
+//       width: 500;
+//   }
+.accordion-button:hover {
+  background-color: #16d0c7;
+  color: rgb(8, 8, 8);
+}

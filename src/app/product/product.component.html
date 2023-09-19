@@ -1,0 +1,34 @@
+<div class="container-fluid" style="background-color: #e6e6fa">
+  <div class="row" style="margin-left: 580px">
+    <h2>{{ product.pName }}</h2>
+  </div>
+  <div class="row">
+    <div
+      class="card"
+      style="
+        width: 25rem;
+        background-color: #fef9c7;
+        margin-left: 500px;
+        margin-top: 40px;
+        border-radius: 40px;
+      "
+    >
+      <img
+        src="{{ product.img_path }}"
+        class="card-img-top"
+        style="margin-top: 20px; border-radius: 40px"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.pName }}</h5>
+        <p class="card-text">Product Price:{{ product.price }}</p>
+        <p class="card-text">Product Style:{{ product.pStyle }}</p>
+        <p class="card-text">Product Remarks:{{ product.pRemarks }}</p>
+        <a href="#" class="btn btn-primary" 
+          >Add to wishlist</a
+        >
+      </div>
+    </div>
+  </div>
+  <br /><br />
+</div>

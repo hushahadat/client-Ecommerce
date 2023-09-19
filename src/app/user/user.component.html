@@ -1,0 +1,55 @@
+<div class="table-responsive">
+  <div class="container-fluid">
+    <!-- <h1 id="user">USER</h1> -->
+    <div>
+      <table class="table" style="background-color: #003665">
+        <thead class="table-darsk" style="background-color: #003665">
+          <tr>
+            <th scope="col" class="text-white">ID</th>
+            <th scope="col" class="text-white">FIRST NAME</th>
+            <th scope="col" class="text-white">LAST NAME</th>
+            <th scope="col" class="text-white">DATE OF BIRTH</th>
+            <th scope="col" class="text-white">Gender</th>
+            <th scope="col" class="text-white">Address</th>
+            <th scope="col" class="text-white">EMAIL ID</th>
+            <th scope="col" class="text-white">PHONE NUMBER</th>
+            <th scope="col" class="text-white">City</th>
+            <th scope="col" class="text-white">State</th>
+            <th scope="col" class="text-white">Country</th>
+            <th scope="col" class="text-white">Role</th>
+          </tr>
+        </thead>
+        <tbody style="background-color: rgb(177, 214, 214)">
+          <tr *ngFor="let u of userArr">
+            <td>{{ u._id }}</td>
+            <td>{{ u.firstname }}</td>
+            <td>{{ u.lastname }}</td>
+            <td>{{ u.dob }}</td>
+            <td>{{ u.gender }}</td>
+            <td>{{ u.address }}</td>
+            <td>{{ u.remailid }}</td>
+            <td>{{ u.phonenumber }}</td>
+            <td>{{ u.city }}</td>
+            <td>{{ u.state }}</td>
+            <td>{{ u.country }}</td>
+            <td>{{ u.role }}</td>
+            <td>
+              <button
+                class="btn btn-primary"
+                (click)="displayUserDetails(u._id)"
+              >
+                More Details
+              </button>
+            </td>
+            <td>
+              <button class="btn btn-primary" (click)="deleteUser(u._id)">
+                Delete
+              </button>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,172 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Information</h1>
+      <ul>
+        <pre></pre>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+            />
+          </svg>
+          Hospital Location:No.10P & 12P, Whitefield Rd, Varthur
+          Kodi,Ramagondanahalli, Bengaluru, Karnataka 560066
+        </li>
+        <pre></pre>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          +91 8061656666 / +91 8033130333, +91 8884444330,+91 8067366795
+          <pre></pre>
+        </li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+            />
+          </svg>
+          jyotirmay.h@columbiaindiahospitals.com | enthegde@gmail.com
+          <pre></pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Contact form</h5>
+          <p class="card-text"></p>
+          <div class="container-fluid">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <div class="form-row">
+                  <label for="cName"> Name: </label>
+                  <input
+                    id="cName"
+                    type="text"
+                    class="form-control"
+                    formControlName="cName"
+                    [ngClass]="{ 'is-invalid': submitted && f['cName'].errors }"
+                  />
+                  <div
+                    *ngIf="submitted && f['cName'].errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f['cName'].errors['required']">
+                      Name is required
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="cEmail"> Email</label>
+                  <input
+                    id="cEmail"
+                    type="text"
+                    class="form-control"
+                    formControlName="cEmail"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['cEmail'].errors
+                    }"
+                  />
+                  <div
+                    *ngIf="submitted && f['cEmail'].errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f['cEmail'].errors['required']">
+                      Email is Required
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="cPhone"> PhoneNo </label>
+                  <input
+                    id="cPhone"
+                    type="text"
+                    class="form-control"
+                    formControlName="cPhone"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['cPhone'].errors
+                    }"
+                  />
+                  <div
+                    *ngIf="submitted && f['cPhone'].errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f['cPhone'].errors['required']">
+                      PhoneNo is Required
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="cMessage"> Message </label>
+                  <textarea
+                    class="form-control"
+                    id="cMessage"
+                    formControlName="cMessage"
+                    placeholder="Required example textarea"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['cMessage'].errors
+                    }"
+                  >
+                  </textarea>
+
+                  <div
+                    *ngIf="submitted && f['cMessage'].errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f['cMessage'].errors['required']">
+                      Please add text
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary" (click)="onSubmit()">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <pre></pre>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7776.472996090612!2d77.736579!3d12.956713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0df61d3a1a4b%3A0x24f86d9cf8e48abb!2sManipal%20Hospital%2C%20Varthur%20Road!5e0!3m2!1sen!2sin!4v1650867394262!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+  <br /><br />
+</div>

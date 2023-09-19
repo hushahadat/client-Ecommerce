@@ -1,0 +1,112 @@
+<div class="container">
+  <!-- <h1
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    ADD SUPPLIERS DETAILS
+  </h1> -->
+  <div class="container-fluid" id="add">
+    <form [formGroup]="supplierform" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="form-row">
+          <label for="supplierid">Supplier Id</label>
+          <input
+            id="supplierid"
+            type="number"
+            id="sinput"
+            class="form-control"
+            formControlName="supplierid"
+            [ngClass]="{ 'is-invalid': submitted && f['supplierid'].errors }"
+          />
+          <div
+            *ngIf="submitted && f['supplierid'].errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f['supplierid'].errors['required']">
+              Input Valid Supplier Id
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="suppliername">Supplier Name</label>
+          <input
+            id="suppliername"
+            type="text"
+            id="sinput"
+            class="form-control"
+            formControlName="suppliername"
+            [ngClass]="{ 'is-invalid': submitted && f['suppliername'].errors }"
+          />
+          <div
+            *ngIf="submitted && f['suppliername'].errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f['suppliername'].errors['required']">
+              Input Valid Supplier Name
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="phno">Contact No</label>
+          <input
+            id="phno"
+            type="number"
+            id="sinput"
+            class="form-control"
+            formControlName="phno"
+            [ngClass]="{ 'is-invalid': submitted && f['phno'].errors }"
+          />
+          <div *ngIf="submitted && f['phno'].errors" class="invalid-feedback">
+            <div *ngIf="f['phno'].errors['required']">
+              Please Provide Valid Contact Number
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="email">Email-Id</label>
+          <input
+            id="email"
+            type="text"
+            class="form-control"
+            id="sinput"
+            formControlName="email"
+            [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+          />
+          <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+            <div *ngIf="f['email'].errors['required']">
+              Enter Valid Email-Id
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="location">Location</label>
+          <input
+            id="location"
+            type="text"
+            class="form-control"
+            id="sinput"
+            formControlName="location"
+            [ngClass]="{ 'is-invalid': submitted && f['location'].errors }"
+          />
+          <div
+            *ngIf="submitted && f['location'].errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f['location'].errors['required']">
+              Input Location of Supplier
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" (onclick)="(onSubmit)">
+          ADD SUPPLIER
+        </button>
+      </div>
+    </form>
+  </div>
+  <br />
+  <br />
+  <br />
+</div>

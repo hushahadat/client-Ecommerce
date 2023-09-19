@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+.container-fluid {
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+  /*  background-color: #e6e6fa;
+  color: #123c69;*/
+}
+#product-tab:hover,
+#manufacturers-tab:hover,
+#suppliers-tab:hover,
+#user-tab:hover,
+#addProduct-tab:hover,
+#updateProduct-tab:hover,
+#deleteProduct-tab:hover {
+  background-color: #14a098;
+  color: white;
+  transform: scale(1.1);
+}
+#product-tab,
+#user-tab,
+#manufacturers-tab,
+#suppliers-tab,
+#addProduct-tab,
+#updateProduct-tab,
+#deleteProduct-tab,
+#addSupplier-tab,
+#updateSupplier-tab,
+#deleteSupplier-tab,
+#addmanufacturers-tab,
+#updatemanufacturers-tab,
+#deletemanufacturers-tab,
+#addUser-tab,
+#updateUser-tab,
+#deleteUser-tab {
+  color: black;
+  font-weight: 500;
+}
+
+#addSupplier-tab:hover,
+#updateSupplier-tab:hover,
+#deleteSupplier-tab:hover,
+#addUser-tab:hover,
+#updateUser-tab:hover,
+#deleteUser-tab:hover {
+  background-color: #14a098;
+  color: white;
+  transform: scale(1.1);
+}
+
+#addmanufacturers-tab:hover,
+#updatemanufacturers-tab:hover,
+#deletemanufacturers-tab:hover {
+  background-color: #14a098;
+  color: white;
+  transform: scale(1.1);
+}

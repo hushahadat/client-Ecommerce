@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <h3>Our Products</h3>
+  <hr />
+  <table class="table table-warning table-hover">
+    <thead>
+      <tr>
+        <th scope="col">SNo.</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Style</th>
+        <th scope="col">Battery Size</th>
+        <th scope="col">Range in dB</th>
+        <th scope="col">MRP</th>
+        <th scope="col">Remarks</th>
+        <th scope="col">Images</th>
+        <th scope="col">Add to List</th>
+        <th scope="col">Details</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of productArr">
+        <td>{{ p._id }}</td>
+        <td>{{ p.pName }}</td>
+        <td>{{ p.pStyle }}</td>
+        <td>{{ p.pBattery }}</td>
+        <td>{{ p.pFittingRange }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.pRemarks }}</td>
+        <td><img src="{{ p.img_path }}" /></td>
+        <td><button type="button" class="btn btn-dark">ADD</button></td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-dark"
+            (click)="displayProductDetails(p._id)"
+          >
+            More Details
+          </button>
+        </td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-dark"
+            (click)="deleteProduct(p._id)"
+          >
+            Delete Product
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  Product Status:{{ status }}
+  <app-product-eventemitter
+    (fireEvent)="onFireEvent($event)"
+  ></app-product-eventemitter>
+</div>

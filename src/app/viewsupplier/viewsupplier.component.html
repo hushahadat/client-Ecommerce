@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <!-- <h2>SUPPLIERS TABLE</h2> -->
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Supplier_Id</th>
+        <th>Supplier_Name</th>
+        <th>Contact-No</th>
+        <th>Email-Id</th>
+        <th>Location</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of supplierArray">
+        <td>{{ s._id }}</td>
+        <td>{{ s.sName }}</td>
+        <td>{{ s.sContact }}</td>
+        <td>{{ s.sEmail }}</td>
+        <td>{{ s.sLocation }}</td>
+        <td>
+          <!-- <button
+            class="btn btn-primary"
+            (click)="displaysupplierdetails(s._id)"
+          >
+            MoreDetails
+          </button> -->
+        </td>
+        <td>
+          <button class="btn btn-primary" (click)="deletesupplier(s)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br /><br /><br />
+</div>

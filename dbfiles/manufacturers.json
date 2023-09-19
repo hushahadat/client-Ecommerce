@@ -1,0 +1,386 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "pName": "Starkey Halo",
+      "pStyle": "Behind the ear",
+      "pBattery": "20-90/80",
+      "pFittingRange": "312",
+      "pRemarks": "wireless connectivity",
+      "price": 50000,
+      "supplier_id": 44,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/starkey-halo.jpg"
+    },
+    {
+      "id": 102,
+      "pName": "Audeo M30",
+      "pStyle": "M30-312",
+      "pBattery": "10-80/100",
+      "pFittingRange": "13",
+      "pRemarks": "Receiver in the canal",
+      "price": 37400,
+      "supplier_id": 45,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/audeom30.jpg"
+    },
+    {
+      "id": 103,
+      "pName": "Styletto 3X",
+      "pStyle": "RIC",
+      "pBattery": "25-105/85",
+      "pFittingRange": "13",
+      "pRemarks": "RIC, ITC and CIC are available in MP,HP and UP receivers",
+      "price": 300100,
+      "supplier_id": 46,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/styletto.jpg"
+    },
+    {
+      "id": 104,
+      "pName": "Phonak Bolero",
+      "pStyle": "M70-M",
+      "pBattery": "20-85/110",
+      "pFittingRange": "312",
+      "pRemarks": "Behind the ear",
+      "price": 160000,
+      "supplier_id": 47,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/phonak-bolero.jpeg"
+    },
+    {
+      "id": 105,
+      "pName": "Resound LiNX Quattro 9",
+      "pStyle": "DW BTE",
+      "pBattery": "20-85/110",
+      "pFittingRange": "20-100",
+      "pRemarks": "Fibre channel-17",
+      "price": 240000,
+      "supplier_id": 48,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/resound-linxquattro9.jpg"
+    },
+    {
+      "id": 106,
+      "pName": "Starkey Livio",
+      "pStyle": "RIC R",
+      "pBattery": "10",
+      "pFittingRange": "312",
+      "pRemarks": "Soundlens IO 1600",
+      "price": 69000,
+      "supplier_id": 49,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/starkey-livio.jpg"
+    },
+    {
+      "id": 107,
+      "pName": "Audifon Rega RITE ",
+      "pStyle": "RITE",
+      "pBattery": "25-105/115",
+      "pFittingRange": "13",
+      "pRemarks": "Visible receivers in the canal",
+      "price": 77000,
+      "supplier_id": 50,
+      "manufacturer_id": 100,
+      "img_path": "assets/prodimg/rega-rite.jpg"
+    },
+    {
+      "id": 108,
+      "pName": "IIC Hearing Aid",
+      "pStyle": "IIC",
+      "pBattery": "20-85/110",
+      "pFittingRange": "10",
+      "pRemarks": "ABS Plastic material, placement in the canal",
+      "price": 30000,
+      "supplier_id": 58,
+      "manufacturer_id": 120,
+      "img_path": "assets/prodimg/iic-hearingaid.jpeg"
+    },
+    {
+      "id": 109,
+      "pName": "Resound LiNX Quattro 7",
+      "pStyle": "DRWC RIE",
+      "pBattery": "20-85/110",
+      "pFittingRange": "10",
+      "pRemarks": "Rechargeable battery",
+      "price": 175000,
+      "supplier_id": 58,
+      "manufacturer_id": 120,
+      "img_path": "assets/prodimg/res7.jpg"
+    },
+    {
+      "id": 110,
+      "pName": "REXTON STYLINE",
+      "pStyle": "RIC BT 80",
+      "pBattery": "20-85/110",
+      "pFittingRange": "10",
+      "pRemarks": "Behind the ear, Made for IPhone",
+      "price": 648000,
+      "supplier_id": 58,
+      "manufacturer_id": 120,
+      "img_path": "assets/prodimg/styline.jpg"
+    }
+  ],
+  "manufacturers": [
+    {
+      "id": 1,
+      "mName": "Kanakdhara Enterprise",
+      "mPhoneNo": "07942539452",
+      "mLocation": "Rajkot, Gujarat",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "kdenterpriseexport@gmail.com"
+    },
+    {
+      "id": 2,
+      "mName": "Audigo Hearing Solutions Private Limited",
+      "mPhoneNo": "08048977230",
+      "mLocation": "Raja Bazar, Patna",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "audigo.hearing@gmail.com"
+    },
+    {
+      "id": 3,
+      "mName": "Unicron Hearing Solution",
+      "mPhoneNo": "080473104152",
+      "mLocation": "Palghar,Maharashtra",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "unicronhearingsolution@gmail.com"
+    },
+    {
+      "id": 4,
+      "mName": "Verma Hearing Aid Center",
+      "mPhoneNo": "07942558902",
+      "mLocation": "New Moti Nagar, Delhi",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "vhacenter@gmail.com"
+    },
+    {
+      "id": 5,
+      "mName": "E- Mold Techniques",
+      "mPhoneNo": "08048967016",
+      "mLocation": "Paldi, Ahmedabad",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "emoldtechniques@yahoo.com"
+    },
+    {
+      "id": 6,
+      "mName": "G.L.Enterprises",
+      "mPhoneNo": "08047315001",
+      "mLocation": "New Delhi",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "sales@glenterprises.co.in"
+    },
+    {
+      "id": 7,
+      "mName": "Medx Healthcare",
+      "mPhoneNo": "08048962313",
+      "mLocation": "NIKOL, Ahmedabad",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "solutions@medxhealth.com"
+    },
+    {
+      "id": 8,
+      "mName": "Green Life Healthcare",
+      "mPhoneNo": "08048604726",
+      "mLocation": "Green Life Healthcare",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "greenlifehealthcare@yahoo.com"
+    },
+    {
+      "id": 9,
+      "mName": "Sunil Enterprises",
+      "mPhoneNo": " 08048950965",
+      "mLocation": "Mukundpur, New Delhi",
+      "PointOfContact": "Bengaluru",
+      "mEmail": " info@sunilenterprises.com"
+    },
+    {
+      "id": 10,
+      "mName": "Arphi Electronics Pvt. Ltd",
+      "mPhoneNo": "08048955468",
+      "mLocation": "Andheri East, Mumbai",
+      "PointOfContact": "Bengaluru",
+      "mEmail": "info@arphi.com"
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_id": 1,
+      "sName": "Sivantos India Private Limited",
+      "sPhoneNo": 8068441073,
+      "sEmail": "sadanada.hulikal@sivantos.com",
+      "sLocation": "Bengaluru",
+      "id": 1
+    },
+    {
+      "supplier_id": 2,
+      "sName": "Aanvii Hearing Solution Pvt Ltd",
+      "sPhoneNo": 9658345834,
+      "sEmail": "custmoercare@aanviihearing.com",
+      "sLocation": "Mangaluru,Dakshina Kannada",
+      "id": 2
+    },
+    {
+      "supplier_id": 3,
+      "sName": "Nayaks Hearing Care Clinic Pvt Ltd",
+      "sPhoneNo": 8048610412,
+      "sEmail": "msjnayak@yahoo.com",
+      "sLocation": "Benagaluru",
+      "id": 3
+    },
+    {
+      "supplier_id": 4,
+      "sName": "Hearing Wellness Clinic",
+      "sPhoneNo": 8048371849,
+      "sEmail": "info@hearingwellness.in",
+      "sLocation": "Delhi",
+      "id": 4
+    },
+    {
+      "supplier_id": 5,
+      "sName": "Earfit Speecg And Hearing Clinic",
+      "sPhoneNo": 9886050101,
+      "sEmail": "info@earfit.in",
+      "sLocation": "Bengaluru,Karnataka",
+      "id": 5
+    },
+    {
+      "supplier_id": 6,
+      "sName": "Sound Life Inc",
+      "sPhoneNo": 8048616723,
+      "sEmail": "here@soundlife.in",
+      "sLocation": "Gujarat",
+      "id": 6
+    },
+    {
+      "supplier_id": 7,
+      "sName": "Dyanamic Hearing Solutions BCHearfon Systems",
+      "sPhoneNo": 18774260079,
+      "sEmail": "info@dynamichearingsolutions.ca",
+      "sLocation": "Cranbrook",
+      "id": 7
+    },
+    {
+      "supplier_id": 8,
+      "sName": "Nature Hearing Aid Service &Production Lab",
+      "sPhoneNo": 9990292859,
+      "sEmail": "sures.p3@gmail.com",
+      "sLocation": "Lakkasandra, Bengaluru",
+      "id": 8
+    },
+    {
+      "supplier_id": 9,
+      "sName": "Hearing Aids Delhi",
+      "sPhoneNo": 9810064489,
+      "sEmail": "info@ramavision.in",
+      "sLocation": "Delhi",
+      "id": 9
+    },
+    {
+      "supplier_id": 10,
+      "sName": "Aditi Hearing Solutions",
+      "sPhoneNo": 7026594499,
+      "sEmail": "aditihearingsolution@gamil.com",
+      "sLocation": "Benagaluru",
+      "id": 10
+    }
+  ],
+  "user": [
+    {
+      "firstname": "Sahana",
+      "lastname": "r",
+      "dob": "2022-04-06",
+      "remailid": "bhavna@gmail.com",
+      "rpassword": "bts7",
+      "repassword": "bts7",
+      "phonenumber": 987654345,
+      "address": "Kokkada",
+      "addresstwo": "Manglore",
+      "city": "Dkashina kannada",
+      "country": "India",
+      "state": "Dadar and Nagar Haveli",
+      "id": 1,
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "firstname": "Hamsitha",
+      "lastname": "B",
+      "dob": "1/6/2001",
+      "gender": "F",
+      "remailid": "bhamsitha858@gmail.com",
+      "rpassword": "bnm1123",
+      "phonenumber": "07483887189",
+      "address": "#100,5th cross,srigandha nagar,hegganhallli",
+      "addresstwo": "Bangalore-Karnataka-560091",
+      "city": "Bangalore",
+      "country": "India",
+      "state": "Karnataka",
+      "role": "User"
+    },
+    {
+      "id": 3,
+      "firstname": "Shahadat",
+      "lastname": "Hussain",
+      "dob": "03/07/1999",
+      "gender": "male",
+      "remailid": "shahadathussain757@gmail.com",
+      "rpassword": "123456",
+      "phonenumber": "08298057652",
+      "address": "Road No-09,house No-08,bagan Shahi,azadnagar,mango",
+      "addresstwo": "Jamshedpur",
+      "city": "Jamshedpur",
+      "country": "India",
+      "state": "Jharkhand",
+      "role": "Admin"
+    }
+  ],
+  "cart": [
+    {
+      "id": 201,
+      "uId": 1,
+      "products": [
+        {
+          "id": 106,
+          "pName": "Headphones",
+          "price": 1345,
+          "img_path": "assets/images/prodheadphone.jpg"
+        },
+        {
+          "id": 105,
+          "pName": "Mouse",
+          "price": 720,
+          "img_path": "assets/images/prodmouse.jpg"
+        },
+        {
+          "id": 102,
+          "pName": "USB",
+          "price": 1000,
+          "img_path": "assets/images/produsb.jpg"
+        }
+      ],
+      "total": 3065
+    },
+    {
+      "id": 202,
+      "uId": 2,
+      "total": 146000,
+      "products": [
+        {
+          "id": 107,
+          "pName": "Audifon Rega RITE ",
+          "price": 77000,
+          "img_path": "assets/prodimg/rega-rite.jpg",
+          "count": 1
+        },
+        {
+          "id": 106,
+          "pName": "Starkey Livio",
+          "price": 69000,
+          "img_path": "assets/prodimg/starkey-livio.jpg",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

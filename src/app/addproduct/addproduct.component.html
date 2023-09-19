@@ -1,0 +1,173 @@
+<div class="container-fluid">
+  <div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <label for="id"> Product number: </label>
+        <input
+          id="id"
+          type="number"
+          class="form-control"
+          formControlName="id"
+          [ngClass]="{ 'is-invalid': submitted && f['_id'].errors }"
+        />
+        <div *ngIf="submitted && f['_id'].errors" class="invalid-feedback">
+          <div *ngIf="f['_id'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="pName"> Product Name: </label>
+        <input
+          id="pName"
+          type="text"
+          class="form-control"
+          formControlName="pName"
+          [ngClass]="{ 'is-invalid': submitted && f['pName'].errors }"
+        />
+        <div *ngIf="submitted && f['pName'].errors" class="invalid-feedback">
+          <div *ngIf="f['pName'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="pStyle"> Product Style: </label>
+        <input
+          id="pStyle"
+          type="text"
+          class="form-control"
+          formControlName="pStyle"
+          [ngClass]="{ 'is-invalid': submitted && f['pStyle'].errors }"
+        />
+        <div *ngIf="submitted && f['pStyle'].errors" class="invalid-feedback">
+          <div *ngIf="f['pStyle'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="pBattery"> Battery type: </label>
+        <input
+          id="pBattery"
+          type="text"
+          class="form-control"
+          formControlName="pBattery"
+          [ngClass]="{ 'is-invalid': submitted && f['pBattery'].errors }"
+        />
+        <div *ngIf="submitted && f['pBattery'].errors" class="invalid-feedback">
+          <div *ngIf="f['pBattery'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="pFittingRange"> Fitting Range: </label>
+        <input
+          id="pFittingRange"
+          type="text"
+          class="form-control"
+          formControlName="pFittingRange"
+          [ngClass]="{ 'is-invalid': submitted && f['pFittingRange'].errors }"
+        />
+        <div
+          *ngIf="submitted && f['pFittingRange'].errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f['pFittingRange'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="pRemarks"> Product Remarks: </label>
+        <input
+          id="pRemarks"
+          type="text"
+          class="form-control"
+          formControlName="pRemarks"
+          [ngClass]="{ 'is-invalid': submitted && f['pRemarks'].errors }"
+        />
+        <div *ngIf="submitted && f['pRemarks'].errors" class="invalid-feedback">
+          <div *ngIf="f['pRemarks'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="price"> Product Price: </label>
+        <input
+          id="price"
+          type="number"
+          class="form-control"
+          formControlName="price"
+          [ngClass]="{ 'is-invalid': submitted && f['price'].errors }"
+        />
+        <div *ngIf="submitted && f['price'].errors" class="invalid-feedback">
+          <div *ngIf="f['price'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for=""> Supplier Id: </label>
+        <input
+          id="supplier_id"
+          type="number"
+          class="form-control"
+          formControlName="supplier_id"
+          [ngClass]="{ 'is-invalid': submitted && f['supplier_id'].errors }"
+        />
+        <div
+          *ngIf="submitted && f['supplier_id'].errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f['supplier_id'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="manufacturer_id"> Manufacturer Id </label>
+        <input
+          id="manufacturer_id"
+          type="number"
+          class="form-control"
+          formControlName="manufacturer_id"
+          [ngClass]="{ 'is-invalid': submitted && f['manufacturer_id'].errors }"
+        />
+        <div
+          *ngIf="submitted && f['manufacturer_id'].errors"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f['manufacturer_id'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="img_path"> Image </label>
+        <input
+          id="img_path"
+          type="text"
+          class="form-control"
+          formControlName="img_path"
+          [ngClass]="{ 'is-invalid': submitted && f['img_path'].errors }"
+        />
+        <div *ngIf="submitted && f['img_path'].errors" class="invalid-feedback">
+          <div *ngIf="f['img_path'].errors['required']">
+            Product Name is required
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="mt-2 btn btn-success btn-outline-danger text-white"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <br /><br />
+</div>

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+.container-fluid {
+  font-family: "Source Serif Pro", serif;
+  font-size: large;
+  //background-color: #e6e6fa;
+  //color: #123c69;
+}
+
+#card > div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#c2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: flex;
+  // background: lightblue;
+  justify-content: center;
+}
+#c2.letter {
+  display: inline-block;
+  line-height: 1em;
+}
+// #div2{
+//     background-color:lightblue;
+//     height:500px;
+//     // background-image: url("assets/home_img/profilephoto1.jpg");
+//     background-size: 100%;
+//     background-size: cover;
+// }
+// #div2>img{
+//     z-index: -1;
+//     position: relative;
+//     opacity: 0.5;
+//     background-attachment: fixed;
+
+// }
+// #div2{
+//     background-color: lightblue;
+//     height: 200px;
+// }
+
+#div2 > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  // text-shadow: 0.05rem 0 0 rgb(21, 21, 205);
+}
+
+#div2 > table {
+  background-image: linear-gradient(-90deg, #16d0c7, white);
+}
